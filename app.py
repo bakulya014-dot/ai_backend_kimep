@@ -20,7 +20,8 @@ from flask_cors import CORS
 
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "model" / "student_score_model.joblib"
-META_PATH = BASE_DIR / "model" / "model_info.json"
+META_PATH = BASE_DIR / "model_info.json"
+
 
 app = Flask(__name__)
 CORS(app)
