@@ -57,6 +57,9 @@ def build_explanation(study: float, sleep: float, tests: float, score: float) ->
         + ", ".join(parts)
         + "."
     )
+@app.get("/")
+def home():
+    return jsonify({"status": "ok", "message": "AI backend is running"})
 
 
 @app.get("/api/health")
